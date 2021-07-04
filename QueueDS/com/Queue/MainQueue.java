@@ -15,10 +15,6 @@ public class MainQueue {
 		queue.enqueue(30);
 		queue.enqueue(70);
 		queue.display();
-		queue.dequeue();
-		queue.dequeue();
-		queue.dequeue();
-		queue.dequeue();
 	}
 
 }
