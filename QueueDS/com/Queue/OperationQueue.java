@@ -40,21 +40,4 @@ public class OperationQueue<T> {
 			temp=temp.next;
 		}
 	}
-	
-	/**
-	 * Removing the element from Queue list
-	 * Making next element as front
-	 * @param data
-	 */
-	public void dequeue() {
-		if (front==null) {
-			display();
-			System.out.print("Empty\nThere's no element to dequeue");
-		} else {
-			System.out.println("\nAfter Deque element '"+front.data+"'");
-			front=front.next;
-			display();
-			if (front==null) System.out.print("Empty\n\n");
-		}
-	}
 }
