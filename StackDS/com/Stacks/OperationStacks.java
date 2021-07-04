@@ -35,4 +35,23 @@ public class OperationStacks<T extends Comparable <T>> {
 		}
 	}
 	
+	public void peek() {
+		if (head == null) {
+			System.out.println("Stack is Empty\nThere's no element to peek\n");
+		} else {
+			System.out.println("\nPeeked Element is: "+head.data);
+		}
+	}
+	
+	public void pop() {
+		if (head == null) {
+			display();
+			System.out.print("Empty\nThere's no element to pop");
+		} else {
+			System.out.println("\nAfter Popping element '"+head.data+"'");
+			head=head.next;
+			display();
+			if (head==null) System.out.print("Empty\n\n");
+		}
+	}
 }

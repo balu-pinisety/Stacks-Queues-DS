@@ -19,6 +19,14 @@ public class MainStacks {
 		stacks.push(30);
 		stacks.push(56);
 		stacks.display();//Printing Elements
+		stacks.peek();
+		stacks.pop();
+		stacks.peek();
+		stacks.pop();
+		stacks.peek();
+		stacks.pop();
+		stacks.peek();
+		stacks.pop();
 	}
 
 }
