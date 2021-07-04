@@ -5,7 +5,7 @@ package com.Stacks;
  * Ability to create a Stack of Elements using Linked List
  * Ability to perform Stack Operations on the list
  */
-public class OperationStacks<T extends Comparable <T>> {
+public class OperationStacks<T> {
 	
 	NodeStacks<T> head;
 	
@@ -15,7 +15,7 @@ public class OperationStacks<T extends Comparable <T>> {
 	
 	/**
 	 * Pushing a new element to it
-	 * @param args
+	 * @param data
 	 */
 	public void push(T data) {
 		NodeStacks<T> newNode = new NodeStacks<T>(data);
@@ -35,6 +35,9 @@ public class OperationStacks<T extends Comparable <T>> {
 		}
 	}
 	
+	/**
+	 * Ability to peek the element which is of head
+	 */
 	public void peek() {
 		if (head == null) {
 			System.out.println("Stack is Empty\nThere's no element to peek\n");
@@ -43,6 +46,11 @@ public class OperationStacks<T extends Comparable <T>> {
 		}
 	}
 	
+	
+	/**
+	 * Ability to pop the element which is of head
+	 * Making next element as head
+	 */
 	public void pop() {
 		if (head == null) {
 			display();
